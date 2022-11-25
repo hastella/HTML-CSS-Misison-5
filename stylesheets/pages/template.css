@@ -39,11 +39,11 @@ header {
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
-/* .navigation,
+.navigation,
 .depth3,
 .depth2 {
   visibility: hidden;
-} */
+}
 .is--active {
   visibility: visible;
 }
@@ -71,7 +71,7 @@ header {
   width: 170px;
   height: 30px;
   padding: 8px 0 8px 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 i::before {
   font-size: 2rem;
@@ -150,3 +150,139 @@ i::before {
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+footer {
+  position: absolute;
+  width: 1920px;
+  height: 349px;
+  left: 0px;
+  top: 675px;
+  /* border: 1px solid red; */
+}
+.category {
+  position: absolute;
+  height: 40px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: var(--color-gray-200);
+  display: flex;
+  justify-content: center;
+  padding: 2px 457px;
+}
+.category .cat-txt {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px 12px;
+  /* border: 1px solid red; */
+  color: var(--color-gray-800);
+}
+.category .divider {
+  font-size: 0.65em;
+  font-weight: 500;
+  height: 12px;
+  margin: 10px 0;
+  color: var(--color-gray-800);
+}
+footer .biz-info {
+  position: absolute;
+  width: 1920px;
+  height: 207px;
+  left: 0px;
+  top: 40px;
+  padding: 32px 360px;
+  display: flex;
+  gap: 62px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-gray-800);
+  background-color: var(--color-white);
+  /* border: 1px solid red; */
+}
+.biz-info .logo {
+  width: 176px;
+  height: 40px;
+  background-image: url(/assets/logo/logo-mono.svg);
+}
+.biz-info .info div:not(:last-child) {
+  margin-bottom: 12px;
+}
+.biz-info .contact {
+  width: 293px;
+}
+.contact .customer {
+  display: flex;
+  margin-bottom: 8px;
+}
+.contact .customer div:first-child {
+  height: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  padding-right: 13px;
+  border-right: 1px solid var(--color-gray-800);
+}
+.contact .customer div:last-child {
+  height: 12px;
+  line-height: 12px;
+  padding-left: 15px;
+}
+.contact .tel {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+.contact .address {
+  margin-bottom: 8px;
+}
+.biz-info .bank {
+  width: 282px;
+}
+.biz-info .bank div:first-child {
+  width: 282px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+footer .copyright-box {
+  display: flex;
+  position: absolute;
+  height: 102px;
+  left: 0px;
+  right: 0px;
+  top: 247px;
+  padding: 16px 450px;
+  background-color: var(--color-gray-900);
+}
+.copyright-box .copyright {
+  font-family: "Noto Sans";
+  font-style: normal;
+  width: 848px;
+  height: 70px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--color-gray-200);
+  margin-right: 50px;
+}
+.copyright-box .sns {
+  display: flex;
+  gap: 10px;
+  margin-top: 36px;
+}
+.sns .instagram {
+  border-radius: 50px;
+  background: linear-gradient(
+    174.12deg,
+    #285aeb 5.61%,
+    #bc1888 22.32%,
+    #cc2366 36.16%,
+    #dc2743 51.91%,
+    #e6683c 73.38%,
+    #f09433 91.99%
+  );
+}
